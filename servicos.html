@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Serviços</title>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    </head>
+    <script>    
+        function mudaFoto(foto) {
+            document.getElementById("palhaco").src= foto;
+        }
+    </script>
+    <body>
+        <script>
+            document.write("Data " + date());
+        </script>
+        <div id="servicos">
+            <header id="servico">
+                <button onclick="document.location='login.html'">
+                    <h6 style="text-align: right;">Sair</h6>
+                </button>
+                <h3>Home>Serviços</h3>
+                <h1>Serviços</h1>
+                <h2>Eu quero VN - Onde seus negócios acontecem.</h2>
+                <nav id="menu">
+                    <h2>Menu Principal</h2>
+                    <ul>
+                    <li onmouseover="mudaFoto('_img/home.png')" onmouseout="mudaFoto('_img/servicos.png')"> <a href="home.html">Home</a> </li>
+                    <li onmouseover="mudaFoto('_img/servicos.png')" onmouseout="mudaFoto('_img/servicos.png')"> <a href="servicos.html">Serviços</a> </li>
+                    <li onmouseover="mudaFoto('_img/hortifruti.png')" onmouseout="mudaFoto('_img/servicos.png')"> <a href="hortifruti.html">Hortifruti</a> </li>
+                    <li onmouseover="mudaFoto('_img/delivery.png')" onmouseout="mudaFoto('_img/servicos.png')"> <a href="delivery.html">Delivery</a> </li>
+                    <li onmouseover="mudaFoto('_img/usados.png')" onmouseover="mudaFoto('_img/servicos.png')"> <a href="usados.html">Usados</a> </li>  
+                    <li onmouseover="mudaFoto('_img/imoveis.png')" onmouseout="mudaFoto('_img/servicos.png')"> <a href="imoveis.html">Imóveis</a> </li>
+                </ul>
+                </nav>
+            </header>
+            <figure>
+            <img id="palhaco" src="_img/servicos.png" alt="servicos" width="200px"/>
+            <figcaption>
+                <h3>Eu quero VN</h3>
+                <p>Onde seus negócios acontecem.</p>
+            </figcaption>
+        </figure>
+        <footer class="rodape">
+            <h5>Copyright&copy; 2021 - by Alenity Cruz</h5>
+        </footer>
+        </div>
+        
+    </body>
+</html>
